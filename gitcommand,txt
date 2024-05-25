@@ -53,9 +53,12 @@ remoteTrackingBranch 差分追跡ブランチ
 
 
 git add 前
-⇒
+⇒git clean -f cancel/before-add1.html
 
+git push後にlocalで更新した箇所を削除する(※cleanではコミット後の文字の差分は消せない⇒ファイル新規作成は消せるけど、ファイル内部の差分は消せない)
+git restore ファイル名パス
 
+git restore --staged ./cancel/add1.html
 
 
 
