@@ -58,19 +58,7 @@ git add 前
 git push後にlocalで更新した箇所を削除する(※cleanではコミット後の文字の差分は消せない⇒ファイル新規作成は消せるけど、ファイル内部の差分は消せない)
 git restore ファイル名パス
 
-git add後の取り消し
 git restore --staged ./cancel/add1.html
-git reset ./cancel/add1.html 
-
-commitをなかったことにする。addした状態に戻す
-git reset --soft HEAD^
-
-commitをなかったことにする。addより前に戻す
-git reset --mixed HEAD^
-
-
-
-
 
 
 
